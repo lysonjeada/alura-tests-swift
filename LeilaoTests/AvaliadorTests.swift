@@ -28,7 +28,6 @@ class AvaliadorTests: XCTestCase {
     }
     
     func testDeveEntenderLancesEmOrdemCrescente() {
-        
         let leilao = Leilao(descricao: "Playstation 4")
         leilao.propoe(lance: Lance(maria, 250.0))
         leilao.propoe(lance: Lance(joao, 300.0))
@@ -36,7 +35,6 @@ class AvaliadorTests: XCTestCase {
         
         // Acao
         
-        let leiloeiro = Avaliador()
         try? leiloeiro.avalia(leilao: leilao)
         
         // Validacao
@@ -46,11 +44,9 @@ class AvaliadorTests: XCTestCase {
     }
     
     func testDeveEntenderLeilaoComApenasUmLance() {
-        let joao = Usuario(nome: "Joao")
         let leilao = Leilao(descricao: "Playstation 4")
         leilao.propoe(lance: Lance(joao, 1000.0))
         
-        let leiloeiro = Avaliador()
         try? leiloeiro.avalia(leilao: leilao)
         
         XCTAssertEqual(1000.0, leiloeiro.menorLance())
@@ -65,7 +61,6 @@ class AvaliadorTests: XCTestCase {
             .lance(maria, 600.0)
             .constroi()
         
-        let leiloeiro = Avaliador()
         try? leiloeiro.avalia(leilao: leilao)
         
         let listaDeLances = leiloeiro.tresMaiores()
@@ -80,7 +75,7 @@ class AvaliadorTests: XCTestCase {
         let leilao = CriadorDeLeilao().para(descricao: "Playstation 5")
             .constroi()
         
-        XCTAssertThrowsError(try? leiloeiro.avalia(leilao: leilao), "Não é possível avaliar um leilão sem lances") { error in
+        XCTAssertThrowsError(try leiloeiro.avalia(leilao: leilao), "Não é possível avaliar um leilão sem lances") { error in
             print(error.localizedDescription)
         }
     }
