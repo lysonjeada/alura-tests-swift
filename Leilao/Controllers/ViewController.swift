@@ -27,7 +27,7 @@ class ViewController: UIViewController {
         // Acao
         
         let leiloeiro = Avaliador()
-        leiloeiro.avalia(leilao: leilao)
+        try! leiloeiro.avalia(leilao: leilao)
         
         // Validacao
         
