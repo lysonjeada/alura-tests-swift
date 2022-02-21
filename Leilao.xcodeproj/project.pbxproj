@@ -19,6 +19,7 @@
 		03FA4B27209353CB0047D61B /* Usuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FA4B26209353CB0047D61B /* Usuario.swift */; };
 		03FA4B29209354F50047D61B /* Leilao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FA4B28209354F50047D61B /* Leilao.swift */; };
 		705F73C427C1BB43007A6087 /* AvaliadorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 705F73C327C1BB43007A6087 /* AvaliadorTests.swift */; };
+		7063773D27C32D10009D5E08 /* CriadorDeLeilao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7063773C27C32D10009D5E08 /* CriadorDeLeilao.swift */; };
 		A23F5A0F209CA483000E6525 /* Avaliador.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23F5A0E209CA483000E6525 /* Avaliador.swift */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +59,7 @@
 		03FA4B26209353CB0047D61B /* Usuario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Usuario.swift; sourceTree = "<group>"; };
 		03FA4B28209354F50047D61B /* Leilao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Leilao.swift; sourceTree = "<group>"; };
 		705F73C327C1BB43007A6087 /* AvaliadorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvaliadorTests.swift; sourceTree = "<group>"; };
+		7063773C27C32D10009D5E08 /* CriadorDeLeilao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CriadorDeLeilao.swift; sourceTree = "<group>"; };
 		A23F5A0E209CA483000E6525 /* Avaliador.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Avaliador.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -144,6 +146,7 @@
 		03FA4B21209353730047D61B /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				7063773B27C32CDF009D5E08 /* DataBuilder */,
 				03FA4B24209353AF0047D61B /* Lance.swift */,
 				03FA4B26209353CB0047D61B /* Usuario.swift */,
 				03FA4B28209354F50047D61B /* Leilao.swift */,
@@ -158,6 +161,14 @@
 				03FA4AF2209353270047D61B /* ViewController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		7063773B27C32CDF009D5E08 /* DataBuilder */ = {
+			isa = PBXGroup;
+			children = (
+				7063773C27C32D10009D5E08 /* CriadorDeLeilao.swift */,
+			);
+			path = DataBuilder;
 			sourceTree = "<group>";
 		};
 		A23F5A0D209CA1B9000E6525 /* Views */ = {
@@ -301,6 +312,7 @@
 				03FA4AF3209353270047D61B /* ViewController.swift in Sources */,
 				03FA4B25209353AF0047D61B /* Lance.swift in Sources */,
 				03FA4AF1209353270047D61B /* AppDelegate.swift in Sources */,
+				7063773D27C32D10009D5E08 /* CriadorDeLeilao.swift in Sources */,
 				03FA4B27209353CB0047D61B /* Usuario.swift in Sources */,
 				03FA4AF9209353270047D61B /* Leilao.xcdatamodeld in Sources */,
 				A23F5A0F209CA483000E6525 /* Avaliador.swift in Sources */,
